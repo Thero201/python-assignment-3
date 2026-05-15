@@ -57,22 +57,20 @@ class SleepAnalyser(DataAnalyser):
         difference = round(abs(avg_high - avg_low), 2)
 
         self.result = {
-
             "total_students": len(self.students),
 
             "low_sleep": {
-                "students": len(low_sleep_gpas),
+                 "students": len(low_sleep_gpas),
                 "avg_gpa": avg_low
             },
 
             "high_sleep": {
                 "students": len(high_sleep_gpas),
-                "avg_gpa": avg_high
+               "avg_gpa": avg_high
             },
 
-            "gpa_difference": difference
-        }
-
+        "gpa_difference": difference
+}
     def print_results(self):
 
         print("=" * 30)
